@@ -2,4 +2,4 @@
 
  Trabalho com tema de Química junto com Html
  
-Feito por ![joateramos]([joateramos](https://github.com/joateramos))
+![Professora Maria Silva]([https://avatars.githubusercontent.com/u/12345678](https://github.com/joateramos) =100x100)
