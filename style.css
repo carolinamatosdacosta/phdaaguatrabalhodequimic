@@ -1,12 +1,18 @@
-.animated {
-    animation: mymove 5s infinite;
+body {
+    background-color: #ffe4e1;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes mymove {
-    from {
-        left: 0px;
-    }
-    to {
-        left: 200px;
-    }
+h1 {
+    color: #f7f7f7;
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
 }
