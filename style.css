@@ -16,3 +16,9 @@ p {
     line-height: 1.6;
     margin: 20px;
 }
+.lacquer-regular {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
