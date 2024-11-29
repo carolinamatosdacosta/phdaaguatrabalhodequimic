@@ -40,9 +40,9 @@ body {
 }
 h1 {
   position: relative;
-  color: hsl(0, 0%, 68%);
+  color: hsl(0, 24%, 96%);
   font-weight: bold;
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Lacquer", system-ui;
   letter-spacing: 7px;
   overflow: hidden;
   border-right: 2px solid hsl(0, 0%, 80%);
