@@ -110,6 +110,42 @@
             border-radius: 10px; /* Arredondar as bordas */
             padding: 5px; /* Espaço entre o vídeo e a borda */
 
+   /* Definindo a animação de máquina de escrever */
+   @keyframes typewriter {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* Estilizando o texto */
+        .cursor {
+            display: inline-block;
+            border-right: 3px solid black; /* Cursor */
+            animation: blink 0.75s infinite step-end;
+        }
+
+        /* Animação de máquina de escrever */
+        .typewriter-animation {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            animation: typewriter 4s steps(40) 1s 1 normal both, blink 0.75s infinite step-end;
+        }
+
+        /* Animação do cursor piscando */
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
      </style>
      </head>
      <body>
@@ -136,8 +172,8 @@
 
 <body>
     <header>
-        <p class="cursor typewriter-animation"<h1>🧪 Trabalho de quimica 🧪</h1></p>
-        <p> Ácido fluorídrico ⚠️ </p>
+        <h1 class="cursor typewriter-animation"></h1>🧪 Trabalho de quimica 🧪</h1>
+    <p> Ácido fluorídrico ⚠️ </p>
 <video width="640" height="360" controls>
     <source src="Talking Photo.mp4" type="video/mp4">
 
