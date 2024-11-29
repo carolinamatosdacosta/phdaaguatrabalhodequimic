@@ -40,17 +40,32 @@ p {
     overflow: hidden;
     transform: translateY(-50%);    
 }
-/* Animation */
-.typewriter-animation {
-  animation: 
-    typewriter 5s steps(50) 1s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
+
+/* Estilos do texto */
+.typewriter {
+    font-family: 'Lacquer', monospace; /* Fonte estilo máquina de escrever */
+    font-size: 36px;
+    font-weight: bold;
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde o texto além da largura */
+    border-right: 3px solid black; /* Simula o cursor de digitação */
+    width: 0; /* Começa com largura 0 */
+    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animações */
 }
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+
+/* Animação de digitação */
+@keyframes typing {
+    from {
+        width: 0; /* Começa com o texto escondido */
+    }
+    to {
+        width: 100%; /* O texto aparece completamente */
+    }
 }
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: transparent; }
+
+/* Animação de "blink" do cursor */
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Cursor pisca */
+    }
 }
