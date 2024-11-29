@@ -28,22 +28,8 @@ p {
 }
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-/* Cursor */
-.cursor{
-    position: relative;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 30px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
-
-/* Estilos do texto */
 .typewriter {
-    font-family: 'Lacquer', monospace; /* Fonte estilo máquina de escrever */
+    font-family: 'Courier', monospace; /* Fonte estilo máquina de escrever */
     font-size: 36px;
     font-weight: bold;
     white-space: nowrap; /* Impede quebra de linha */
@@ -68,4 +54,15 @@ p {
     50% {
         border-color: transparent; /* Cursor pisca */
     }
+}
+/* Importa Animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Outros estilos do seu site */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
 }
