@@ -116,6 +116,35 @@
             text-align: center; /* Alinha o título ao centro */
             color: #fffefe; /* Cor verde */
 
+        /* Estilos do texto */
+        .typewriter {
+            font-family: 'Lacquer', monospace; /* Fonte estilo máquina de escrever */
+            font-size: 36px;
+            font-weight: bold;
+            white-space: nowrap; /* Impede quebra de linha */
+            overflow: hidden; /* Esconde o texto além da largura */
+            border-right: 3px solid black; /* Simula o cursor de digitação */
+            width: 0; /* Começa com largura 0 */
+            animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite; /* Animações */
+        }
+
+        /* Animação de digitação */
+        @keyframes typing {
+            from {
+                width: 0; /* Começa com o texto escondido */
+            }
+            to {
+                width: 100%; /* O texto aparece completamente */
+            }
+        }
+
+        /* Animação de "blink" do cursor */
+        @keyframes blink {
+            50% {
+                border-color: transparent; /* Cursor pisca */
+            }
+        }
+
      </style>
      </head>
      <body>
@@ -142,7 +171,7 @@
 
 <body>
     <header>
-        <h1>🧪 Trabalho de quimica 🧪</h1>
+        <h1 class="typewriter">🧪 Trabalho de quimica 🧪</h1>
     <p> Ácido fluorídrico ⚠️ </p>
 <video width="640" height="360" controls>
     <source src="Talking Photo.mp4" type="video/mp4">
