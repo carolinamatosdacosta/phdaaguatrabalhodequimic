@@ -113,11 +113,16 @@
 
         }
         h1 {
-            font-size: 4em; /* Aumenta o tamanho da letra */
-            text-align: center; /* Alinha o título ao centro */
-            color: #fffefe; /* Cor verde */
+            font-family: 'Courier', monospace; /* Fonte estilo máquina de escrever */
+            font-size: 36px;
+            font-weight: bold;
+            white-space: nowrap; /* Impede quebra de linha */
+            overflow: hidden; /* Esconde o texto além da largura */
+            border-right: 3px solid black; /* Simula o cursor de digitação */
+            width: 0; /* Começa com largura 0 */
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animações */
 
-        }
+}
 
      </style>
      </head>
