@@ -26,48 +26,9 @@ p {
     padding: 5px;
     border-image: linear-gradient(45deg, #ff6b6b, #fddb3a) 1;
 }
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-.typewriter {
-    font-family: 'Courier', monospace; /* Fonte estilo máquina de escrever */
-    font-size: 36px;
-    font-weight: bold;
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Esconde o texto além da largura */
-    border-right: 3px solid black; /* Simula o cursor de digitação */
-    width: 0; /* Começa com largura 0 */
-    animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite; /* Animações */
-}
-
-/* Animação de digitação */
-@keyframes typing {
-    from {
-        width: 0; /* Começa com o texto escondido */
-    }
-    to {
-        width: 100%; /* O texto aparece completamente */
-    }
-}
-
-/* Animação de "blink" do cursor */
-@keyframes blink {
-    50% {
-        border-color: transparent; /* Cursor pisca */
-    }
-}
-/* Importa Animate.css */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
-
-/* Outros estilos do seu site */
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    font-size: 36px;
-}
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 /* Base */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 body {
   padding: 0;
   margin: 0;
