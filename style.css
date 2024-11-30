@@ -46,10 +46,6 @@ p {
     animation: move-right 2s infinite;
   }
   
-
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
 /* Estilo básico das seções */
 section {
   padding: 20px;
@@ -58,12 +54,24 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
   border: 2px dashed #1C1C1C;
-  transition: transform 0.3s ease-in-out; /* Transição suave */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição */
 }
 
 /* Efeito de zoom quando o mouse passa por cima */
 section:hover {
   transform: scale(1.05); /* Aumenta a seção para 105% do seu tamanho original */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar mais destaque */
+}
+
+/* Animação de fade-in nos títulos das seções */
+section h2 {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
 }
 
