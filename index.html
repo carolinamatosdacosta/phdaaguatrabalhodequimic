@@ -142,8 +142,54 @@
 </head>
 <body>
 
-    </style>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f8ff;
+            height: 100vh;
+        }
 
+        .emoji {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 8s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const emojis = ['💖', '🌟', '🍀', '🌸', '🦋', '✨', '🎈', '💫'];
+    const numEmojis = 20; // Quantidade de emojis
+
+    for (let i = 0; i < numEmojis; i++) {
+        const emojiElement = document.createElement('div');
+        emojiElement.classList.add('emoji');
+        emojiElement.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emojiElement.style.left = Math.random() * 100 + 'vw';
+        emojiElement.style.animationDuration = (Math.random() * 5 + 5) + 's';
+        emojiElement.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+        document.body.appendChild(emojiElement);
+    }
+</script>
+
+    </style>
+    
 <body>
     <header>
         <div= class="typing">🧪 Trabalho de Química 🧪</div>
