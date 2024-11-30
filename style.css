@@ -27,7 +27,7 @@ p {
     border-image: linear-gradient(45deg, #ff6b6b, #fddb3a) 1;
 }
 .typing {
-    overflow: hidden; /* Esconde o texto que ultrapassa a largura */
+    overflow: visible; /* Esconde o texto que ultrapassa a largura */
     border-right: .15em solid #333; /* Cria um cursor piscante */
     white-space: nowrap; /* Impede quebra de linha */
     margin: 0 auto;
