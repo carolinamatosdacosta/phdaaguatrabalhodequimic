@@ -11,14 +11,14 @@
     <style>
         body {
             font-family: "Lacquer", system-ui;
-            background-color: #f4f4f4; /* Cor de fundo neutra */
+            background-color: #f4f4f4; 
             color: #333;
             margin: 0;
             padding: 0;
             border-left: 10px solid #333;
             border-right: 10px solid #333;
             overflow-y: scroll;
-            background-image: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradiente suave */
+            background-image: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
         }
 
         .typing-title {
@@ -108,6 +108,23 @@
             50% { opacity: 0.8; }
             100% { transform: translateY(-10vh); opacity: 0; }
         }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            section {
+                margin: 20px;
+            }
+
+            .video-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-thumbnail {
+                width: 90%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -146,7 +163,6 @@
         <h2>Lei da Conservação da Massa</h2>
         <p>Essa lei afirma que a massa total de um sistema fechado permanece constante...</p>
     </section>
-    
 
     <section>
         <h2>⚠️ O que é Ácido Fluorídrico?</h2>
