@@ -54,3 +54,11 @@ p {
       left: 200px;
     }
   }
+  #quimica-info, #tabela-periodica, #reacoes-quimicas, #conservacao-da-massa {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
