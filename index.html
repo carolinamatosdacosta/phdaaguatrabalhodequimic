@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho de Química</title>
 
-    <!-- Estilo externo e fontes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
 
@@ -19,7 +18,6 @@
             border-left: 10px solid #070707;
             border-right: 10px solid #000;
             overflow-y: scroll;
-            position: relative;
         }
 
         .typing-title {
@@ -51,7 +49,6 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(43, 42, 42, 0.2);
-            position: relative;
         }
 
         video {
@@ -72,6 +69,27 @@
             text-align: center;
         }
 
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .video-thumbnail {
+            width: 200px;
+            height: 120px;
+            background-color: #000;
+            border: 3px solid #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
         .bubble {
             position: absolute;
             width: 50px;
@@ -89,21 +107,11 @@
             50% { opacity: 0.8; }
             100% { transform: translateY(-10vh); opacity: 0; }
         }
-
-        .example {
-            background-color: #5c5c5c;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-            border: 2px solid #1C1C1C;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
 
     <!-- Bolhas decorativas -->
-    <div class="bubble left"></div>
     <div class="bubble left"></div>
     <div class="bubble left"></div>
     <div class="bubble right"></div>
@@ -125,21 +133,29 @@
 
     <section>
         <h2>⚠️ Por que ele é tão especial?</h2>
-        <div class="example">
-            <h3>Corrosividade única:</h3>
-            <p>O ácido fluorídrico pode corroer vidro devido à afinidade do flúor pelo silício.</p>
+        <div>
+            <p>Corrosividade única, penetração profunda e diversas aplicações na indústria.</p>
         </div>
-        <div class="example">
-            <h3>Penetração profunda:</h3>
-            <p>Suas queimaduras são profundas e difíceis de tratar.</p>
-        </div>
-        <div class="example">
-            <h3>Aplicações:</h3>
-            <ul>
-                <li>Indústria de vidro: Gravações e efeitos foscos.</li>
-                <li>Indústria química: Produção de fluorcarbonos e teflon.</li>
-                <li>Limpeza de metais e semicondutores.</li>
-            </ul>
+    </section>
+
+    <section>
+        <h2>🔬 Vídeos de Química</h2>
+        <div class="video-grid">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Vídeo 1" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="Vídeo 2" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" title="Vídeo 3" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID4" title="Vídeo 4" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID5" title="Vídeo 5" frameborder="0"></iframe>
+            </div>
         </div>
     </section>
 
