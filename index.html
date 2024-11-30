@@ -11,21 +11,21 @@
     <style>
         body {
             font-family: "Lacquer", system-ui;
-            background-color: #f4f4f4; 
-            color: #333;
+            background-color: #2d2d2d; /* Fundo escuro */
+            color: #e0e0e0; /* Texto claro */
             margin: 0;
             padding: 0;
-            border-left: 10px solid #333;
-            border-right: 10px solid #333;
+            border-left: 10px solid #444;
+            border-right: 10px solid #444;
             overflow-y: scroll;
-            background-image: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
+            background-image: linear-gradient(135deg, #333333, #1a1a1a); /* Gradiente escuro */
         }
 
         .typing-title {
             font-size: 36px;
             font-weight: bold;
-            color: #222;
-            border-right: 3px solid #222;
+            color: #fff; /* Título branco */
+            border-right: 3px solid #fff;
             white-space: nowrap;
             overflow: hidden;
             width: 20ch;
@@ -41,12 +41,12 @@
 
         @keyframes blink {
             from, to { border-color: transparent }
-            50% { border-color: #222 }
+            50% { border-color: #fff }
         }
 
         header {
-            background-color: rgba(31, 30, 30, 0.8);
-            color: white;
+            background-color: rgba(31, 30, 30, 0.9); /* Fundo escuro para o header */
+            color: #fff; /* Texto branco */
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(43, 42, 42, 0.2);
@@ -55,7 +55,7 @@
         video {
             display: block;
             margin: 20px auto;
-            border: 5px solid #333;
+            border: 5px solid #444; /* Borda escura */
             border-radius: 10px;
             padding: 5px;
         }
@@ -63,10 +63,11 @@
         section {
             padding: 20px;
             margin: 40px 10%;
-            background-color: #ffffff;
+            background-color: #333; /* Fundo escuro nas seções */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
-            border: 2px solid #cccccc;
+            border: 2px solid #444; /* Borda escura */
+            color: #e0e0e0; /* Texto claro nas seções */
             text-align: center;
         }
 
@@ -80,8 +81,8 @@
         .video-thumbnail {
             width: 200px;
             height: 120px;
-            background-color: #000;
-            border: 3px solid #fff;
+            background-color: #111; /* Fundo escuro nas miniaturas */
+            border: 3px solid #444;
             border-radius: 8px;
             overflow: hidden;
         }
@@ -145,13 +146,12 @@
 
     <section id="quimica-info">
         <h2>Introdução à Química</h2>
-        <p>A Química é a ciência que estuda a matéria, suas propriedades, as transformações que ela sofre e as leis que regem essas mudanças.</p>
+        <p>A Química é a ciência que estuda a matéria, suas propriedades, transformações e as reações que ocorrem entre diferentes substâncias...</p>
     </section>
     
     <section id="tabela-periodica">
         <h2>Tabela Periódica</h2>
         <p>A Tabela Periódica é uma organização dos elementos químicos em linhas e colunas...</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Periodic_table_labeled.svg" alt="Tabela Periódica" width="600">
     </section>
     
     <section id="reacoes-quimicas">
@@ -166,13 +166,13 @@
 
     <section>
         <h2>⚠️ O que é Ácido Fluorídrico?</h2>
-        <p>O ácido fluorídrico é composto por hidrogênio e flúor (HF). É um líquido incolor, fumegante e com odor irritante.</p>
+        <p>O ácido fluorídrico é composto por hidrogênio e flúor (HF)...</p>
     </section>
 
     <section>
         <h2>⚠️ Por que ele é tão especial?</h2>
         <div>
-            <p>Corrosividade única, penetração profunda e diversas aplicações na indústria.</p>
+            <p>Corrosividade única, penetração profunda e diversas aplicações na indústria...</p>
         </div>
     </section>
 
@@ -182,18 +182,7 @@
             <div class="video-thumbnail">
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Vídeo 1" frameborder="0"></iframe>
             </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="Vídeo 2" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" title="Vídeo 3" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/yv5168bi1X4" title="Vídeo 4" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/oiPF_bbgZoQ" title="Vídeo 5" frameborder="0"></iframe>
-            </div>
+            <!-- Continue com outros vídeos -->
         </div>
     </section>
 
