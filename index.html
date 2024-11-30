@@ -11,24 +11,21 @@
     <style>
         body {
             font-family: "Lacquer", system-ui;
-            background-color: #f0f8ff;
-            color: #000;
+            background-color: #f4f4f4; /* Cor de fundo neutra */
+            color: #333;
             margin: 0;
             padding: 0;
-            border-left: 10px solid #070707;
-            border-right: 10px solid #000;
+            border-left: 10px solid #333;
+            border-right: 10px solid #333;
             overflow-y: scroll;
-            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'), linear-gradient(45deg, #6dd5ed, #2193b0); /* Padrão e gradiente de fundo */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+            background-image: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradiente suave */
         }
 
         .typing-title {
             font-size: 36px;
             font-weight: bold;
-            color: #fff;
-            border-right: 3px solid #fff;
+            color: #222;
+            border-right: 3px solid #222;
             white-space: nowrap;
             overflow: hidden;
             width: 20ch;
@@ -44,11 +41,11 @@
 
         @keyframes blink {
             from, to { border-color: transparent }
-            50% { border-color: white }
+            50% { border-color: #222 }
         }
 
         header {
-            background-color: rgba(31, 30, 30, 0.7);
+            background-color: rgba(31, 30, 30, 0.8);
             color: white;
             padding: 20px;
             text-align: center;
@@ -58,7 +55,7 @@
         video {
             display: block;
             margin: 20px auto;
-            border: 5px solid #f9fffa;
+            border: 5px solid #333;
             border-radius: 10px;
             padding: 5px;
         }
@@ -66,10 +63,10 @@
         section {
             padding: 20px;
             margin: 40px 10%;
-            background-color: #696969;
+            background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
-            border: 2px dashed #1C1C1C;
+            border: 2px solid #cccccc;
             text-align: center;
         }
 
@@ -98,7 +95,7 @@
             position: absolute;
             width: 50px;
             height: 50px;
-            background-color: rgba(248, 245, 245, 0.6);
+            background-color: rgba(248, 245, 245, 0.4);
             border-radius: 50%;
             animation: float 6s infinite ease-in-out;
         }
@@ -149,19 +146,4 @@
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Vídeo 1" frameborder="0"></iframe>
             </div>
             <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="Vídeo 2" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" title="Vídeo 3" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID4" title="Vídeo 4" frameborder="0"></iframe>
-            </div>
-            <div class="video-thumbnail">
-                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID5" title="Vídeo 5" frameborder="0"></iframe>
-            </div>
-        </div>
-    </section>
-
-</body>
-</html>
+                <ifr
