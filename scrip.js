@@ -9,4 +9,4 @@ function type() {
     }
 }
 
-setInterval(type, 100); /
+setInterval(type, 100); 
