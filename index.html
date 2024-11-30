@@ -1,88 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Química - Ensino Médio</title>
+    <title>Trabalho de Química</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #2d6a4f; /* verde chique */
-            color: #fff;
+            font-family: "Lacquer", system-ui;
+            background-color: #f4f4f4; /* Cor de fundo neutra */
+            color: #333;
             margin: 0;
             padding: 0;
+            border-left: 10px solid #333;
+            border-right: 10px solid #333;
+            overflow-y: scroll;
+            background-image: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradiente suave */
         }
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            text-decoration: underline;
-            color: #a7c957;
-        }
-        .animated-text {
-            font-size: 1.5em;
-            animation: fadeIn 3s ease-in-out infinite;
-        }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-        .bubble {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: #a7c957;
-            position: absolute;
-            animation: floatBubble 10s infinite;
-        }
-        @keyframes floatBubble {
-            0% { top: 100%; left: 50%; }
-            100% { top: 0%; left: 50%; }
-        }
-        video {
-            width: 100%;
-            max-width: 600px;
+
+        .typing-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #222;
+            border-right: 3px solid #222;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 20ch;
+            animation: typing 4s steps(20), blink 0.75s step-end infinite;
             margin: 20px auto;
-            display: block;
+            text-align: center;
         }
-        .videos {
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 20ch }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #222 }
+        }
+
+        header {
+            background-color: rgba(31, 30, 30, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(43, 42, 42, 0.2);
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #333;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 40px 10%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
+            border: 2px solid #cccccc;
+            text-align: center;
+        }
+
+        .video-grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 20px;
         }
-        .videos iframe {
-            width: 45%;
-            margin: 10px;
+
+        .video-thumbnail {
+            width: 200px;
+            height: 120px;
+            background-color: #000;
+            border: 3px solid #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bubble {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(248, 245, 245, 0.4);
+            border-radius: 50%;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .bubble.left { left: 0; }
+        .bubble.right { right: 0; }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-10vh); opacity: 0; }
         }
     </style>
 </head>
 <body>
 
-    <h1>Química no Ensino Médio</h1>
+    <!-- Bolhas decorativas -->
+    <div class="bubble left"></div>
+    <div class="bubble left"></div>
+    <div class="bubble right"></div>
+    <div class="bubble right"></div>
 
-    <div class="animated-text">
-        <p>Bem-vindo ao nosso site interativo de Química!</p>
-    </div>
+    <header>
+        <div class="typing-title">🧪 Trabalho de Química 🧪</div>
+    </header>
 
-    <!-- Vídeo colocado -->
-    <video controls>
-        <source src="seu_video.mp4" type="video/mp4">
-        Seu navegador não suporta o formato de vídeo.
+    <video width="640" height="360" controls>
+        <source src="Talking Photo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
     </video>
 
-    <!-- Adicionando mais vídeos -->
-    <div class="videos">
-        <iframe src="https://www.youtube.com/embed/video_id_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/video_id_2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/video_id_3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/video_id_4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/video_id_5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <section>
+        <h2>⚠️ O que é Ácido Fluorídrico?</h2>
+        <p>O ácido fluorídrico é composto por hidrogênio e flúor (HF). É um líquido incolor, fumegante e com odor irritante.</p>
+    </section>
 
-    <!-- Decoração de bolha -->
-    <div class="bubble" style="animation-duration: 12s;"></div>
-    <div class="bubble" style="animation-duration: 8s;"></div>
-    <div class="bubble" style="animation-duration: 10s;"></div>
+    <section>
+        <h2>⚠️ Por que ele é tão especial?</h2>
+        <div>
+            <p>Corrosividade única, penetração profunda e diversas aplicações na indústria.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔬 Vídeos de Química</h2>
+        <div class="video-grid">
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID1" title="Vídeo 1" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID2" title="Vídeo 2" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID3" title="Vídeo 3" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID4" title="Vídeo 4" frameborder="0"></iframe>
+            </div>
+            <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID5" title="Vídeo 5" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
