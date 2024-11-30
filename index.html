@@ -4,22 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho de Química</title>
-    
+
     <!-- Estilo externo e fontes -->
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
 
     <style>
         body {
             font-family: "Lacquer", system-ui;
-            background-color: #353535;
+            background-color: #f0f8ff;
             color: #000;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             border-left: 10px solid #070707;
             border-right: 10px solid #000;
-            overflow-y: scroll; /* Permite rolagem vertical */
+            overflow-y: scroll;
+            position: relative;
+        }
+
+        .typing-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            border-right: 3px solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 20ch;
+            animation: typing 4s steps(20), blink 0.75s step-end infinite;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 20ch }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: white }
         }
 
         header {
@@ -28,30 +51,25 @@
             padding: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(43, 42, 42, 0.2);
-            border-bottom: 3px solid #727272;
+            position: relative;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #f9fffa;
+            border-radius: 10px;
+            padding: 5px;
         }
 
         section {
             padding: 20px;
-            margin: 20px 0;
+            margin: 40px 10%;
             background-color: #696969;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
             border: 2px dashed #1C1C1C;
-            transition: transform 0.2s;
-        }
-
-        section:hover {
-            transform: scale(1.02);
-        }
-
-        .example {
-            background-color: #5c5c5c;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-            border: 2px solid #1C1C1C;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         .bubble {
@@ -72,47 +90,37 @@
             100% { transform: translateY(-10vh); opacity: 0; }
         }
 
-        video {
-            border: 5px solid #f9fffa;
-            border-radius: 10px;
-            padding: 5px;
-        }
-
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
+        .example {
+            background-color: #5c5c5c;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 2px solid #1C1C1C;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <!-- Bolhas do lado esquerdo -->
-    <div class="bubble left"></div>
-    <div class="bubble left"></div>
-    <div class="bubble left"></div>
-    <div class="bubble left"></div>
-    <div class="bubble left"></div>
 
-    <!-- Bolhas do lado direito -->
-    <div class="bubble right"></div>
-    <div class="bubble right"></div>
-    <div class="bubble right"></div>
+    <!-- Bolhas decorativas -->
+    <div class="bubble left"></div>
+    <div class="bubble left"></div>
+    <div class="bubble left"></div>
     <div class="bubble right"></div>
     <div class="bubble right"></div>
 
     <header>
-        <h1>🧪 Trabalho de Química 🧪</h1>
-        <p>Ácido fluorídrico ⚠️</p>
-        <section>
-            <video width="640" height="360" controls>
-                <source src="Talking Photo.mp4" type="video/mp4">
-            </video>
-        </section>
-    </body>
+        <div class="typing-title">🧪 Trabalho de Química 🧪</div>
     </header>
+
+    <video width="640" height="360" controls>
+        <source src="Talking Photo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
 
     <section>
         <h2>⚠️ O que é Ácido Fluorídrico?</h2>
-        <p>O ácido fluorídrico é composto por hidrogênio e flúor (HF). É um líquido incolor e fumegante com odor irritante.</p>
+        <p>O ácido fluorídrico é composto por hidrogênio e flúor (HF). É um líquido incolor, fumegante e com odor irritante.</p>
     </section>
 
     <section>
@@ -134,4 +142,6 @@
             </ul>
         </div>
     </section>
-    </html>
+
+</body>
+</html>
