@@ -57,6 +57,18 @@ section {
   box-shadow: 0 4px 8px rgba(209, 208, 208, 0.2);
   border: 2px dashed #1C1C1C;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 section:hover {
